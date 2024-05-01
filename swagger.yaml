@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Email Service API
+  description: This API allows you to send emails.
+  version: 1.0.0
+servers:
+  - url: ${SERVER_URL}
+paths:
+  /email/send:
+    post:
+      summary: Send Email
+      description: Endpoint to send an email
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: File to attach to the email
+                to:
+                  type: string
+                  description: Recipient email address
+      responses:
+        '200':
+          description: Email sent successfully
+        '400':
+          description: Bad request

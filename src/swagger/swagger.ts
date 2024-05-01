@@ -3,6 +3,11 @@ import { INestApplication } from '@nestjs/common';
 
 export function setupSwagger(app: INestApplication) {
   const options = new DocumentBuilder()
+    .setContact(
+      'API Support',
+      'http://www.exmaple.com/support',
+      'support@example.com',
+    )
     .setTitle('BRICSHUB SERVICES')
     .setDescription('These are the services used by bricshub')
     .setVersion('1.0')

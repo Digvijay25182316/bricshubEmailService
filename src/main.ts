@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { EmailModule } from './email/email.module';
+import { EmailModule } from './sendemail/email.module';
 import { setupSwagger } from './swagger/swagger';
 
 async function bootstrap() {
