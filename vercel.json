@@ -1,5 +1,13 @@
 {
     "version": 2,  
+    "env": {
+      "SMTP_EMAIL":"digvijays.edake2002@outlook.com",
+      "NODEMAILER_HOST":"smtp.office365.com",
+      "NODEMAILER_PASS":"cudjxykjaorivnyt",
+      "NODEMAILER_PORT":"587",
+      "NODEMAILER_USER":"digvijays.edake2002@outlook.com",
+      "PORT":"4000"
+  },
     "builds": [  
       {  
         "src": "dist/main.js",  
